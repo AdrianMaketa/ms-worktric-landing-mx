@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORKTRIC | ELECTRICIDAD EN SERVICIO</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="" id="top"></a>
+    <!--NAVBAR-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-worktric py-0 h-nav fixed-top"
+    >
+      <div class="container-lg container-fluid">
+        <a class="navbar-brand py-0" href="home.html">
+          <img src="img/logo_head.png" class="logo-brand" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse bg-worktric"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto font-weight-bold resp-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Marcas
+              </a>
+              <div
+                class="dropdown-menu dark-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="worktric.html">Worktric</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="chint.html">Chint Electric</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="starco.html">Staco Energy</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html#galeria">Galería</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner-secondary chint">
+      <img src="img/brands/logo-chint.svg" class="logo" alt="Logo chint" />
+    </section>
+
+    <section class="bg-white">
+      <div class="container-fluid">
+        <div class="content">
+          <p class="text-starco">
+            Somos la marca líder en el mercado eléctrico industrial en Asia,
+            fundada en 1984.
+          </p>
+          <p class="text-starco">
+            Una de las bases más grandes de manufactura en el mundo para equipos
+            de Transmisión y Distribución de energía.
+          </p>
+          <p class="text-starco">
+            Premiada como la No. 1 por años consecutivos en producción y ventas
+            en productos de Baja Tensión en china y 18 años consecutivos dentro
+            del Top 500 de las mejores compañías de todo Asia. CHINT Electrics,
+            en el Top 50 como compañía listada en la bolsa (Forbes Asia)
+          </p>
+
+          <div class="media">
+            <a
+              class="download-link"
+              target="_blank"
+              href="pdf/Introduccion_CHINT MEXICO_Jun21_v4.pdf"
+            >
+              <img
+                class="img-brand"
+                src="img/brands/pdf-chint.svg"
+                alt="Descargar PDF"
+              />
+
+              <p class="download-text text-starco">
+                Descargar <br />
+                presentación
+              </p>
+            </a>
+
+            <a
+              class="download-link cursor-pointer"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              <img
+                class="img-brand"
+                src="img/brands/video-chint.svg"
+                alt="Ver video"
+              />
+
+              <p class="download-text text-chint">
+                Video <br />
+                Chint
+              </p>
+            </a>
+
+            <!-- Modal VIDEO -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span
+                        aria-hidden="true"
+                        onclick="$('#modalvideo').trigger('pause');"
+                        >&times;</span
+                      >
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <video id="modalvideo" width="100%" controls>
+                      <source
+                        src="video/introduccion-chint.mp4"
+                        type="video/mp4"
+                      />
+
+                      Tu navegador no soporta este formato de video.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="navigation">
+            <a class="back-link" href="home.html">
+              <img src="img/brands/back.svg" alt="" />
+              <span>Regresar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SCRIPTS-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/events.js"></script>
+  </body>
+</html>

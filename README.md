@@ -1,2 +1,5 @@
-# ms-worktric-landing-mx
-Landing Page the Worktric Mexico
+# Documentation
+
+Command Sass export
+
+`sass --watch scss/styles.scss css/styles.css`

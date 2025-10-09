@@ -1,0 +1,87 @@
+.banner-secondary {
+  margin-top: 50px;
+  padding: 3rem 1rem;
+  background: transparent url(../img/background-slide.jpg) scroll no-repeat
+    center/ cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    width: 200px;
+  }
+}
+
+.content {
+  padding: 5rem 1rem;
+  background: white;
+  text-align: center;
+  font-size: 1rem;
+
+  .pdf-link {
+    text-decoration: none;
+    transition: all ease 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .img-brand {
+      margin-top: 10rem;
+    }
+
+    .download-text {
+      font-weight: bold;
+      font-size: 37px;
+      line-height: 1.5;
+      color: #e4b533;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+
+    .back-link {
+      text-decoration: none;
+      color: black;
+      transition: all ease 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .logo {
+    width: 50%;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .logo {
+    width: 50%;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .logo {
+    width: 50%;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

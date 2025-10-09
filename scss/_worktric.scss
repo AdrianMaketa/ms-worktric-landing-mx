@@ -1,0 +1,103 @@
+.banner-secondary {
+  margin-top: 50px;
+  padding: 3rem 1rem;
+  background: transparent url(../img/background-slide.jpg) scroll no-repeat
+    center/ cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.velher {
+    background: transparent url(../img/brands/bg-velher.jpg) scroll no-repeat
+      center/ cover !important;
+  }
+
+  &.exl {
+    background: transparent url(../img/brands/bg-exl.jpg) scroll no-repeat
+      center/ cover !important;
+  }
+
+  &.starco {
+    background: transparent url(../img/brands/bg-starco.jpg) scroll no-repeat
+      bottom center/ cover !important;
+  }
+
+  &.chint {
+    background: transparent url(../img/brands/bg-chint.jpg) scroll no-repeat
+      bottom center/ cover !important;
+  }
+
+  &.bit {
+    background: transparent url(../img/brands/bg-bit.jpg) scroll no-repeat
+      bottom center/ cover !important;
+  }
+}
+
+.content {
+  padding: 5rem 1rem;
+  background: white;
+  text-align: center;
+  font-size: 1rem;
+
+  .media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    .download-link {
+      text-decoration: none;
+      transition: all ease 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .img-brand {
+        margin-top: 10rem;
+        width: 120px;
+        margin-bottom: 1rem;
+      }
+
+      .download-text {
+        font-weight: bold;
+        font-size: 37px;
+        line-height: 1;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .velher-title {
+    font-weight: bolder;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+
+    .back-link {
+      text-decoration: none;
+      color: black;
+      transition: all ease 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    .media {
+      flex-direction: row;
+    }
+  }
+}

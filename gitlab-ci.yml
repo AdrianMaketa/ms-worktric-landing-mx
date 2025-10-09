@@ -1,0 +1,10 @@
+image: alpine:latest
+
+before_script:
+  - apk add --no-cache lftp
+
+deploy:
+  script:
+    - lftp -c "open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER; set ssl:verify-certificate no; mirror -R ./ /public_html/worktric"
+  only:
+    - master
