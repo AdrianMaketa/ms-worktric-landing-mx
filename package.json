@@ -1,0 +1,12 @@
+{
+  "name": "ms-worktric-landing-mx",
+  "version": "1.0.0",
+  "description": "Command Sass export",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

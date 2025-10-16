@@ -1,0 +1,54 @@
+/* Gallery thumbnails */
+.gallery-thumb {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Lightbox modal layout */
+.lightbox-modal-content {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Lightbox image fits viewport */
+.lightbox-image {
+  max-height: 90vh;
+  max-width: 90vw;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Close button fixed top-right */
+.lightbox-close {
+  position: fixed;
+  top: 10px;
+  right: 16px;
+  font-size: 2rem;
+  opacity: 1;
+  z-index: 1051;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Navigation arrows */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.lightbox-prev {
+  left: 16px;
+}
+.lightbox-next {
+  right: 16px;
+}
