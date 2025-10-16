@@ -1,438 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORKTRIC | ELECTRICIDAD EN SERVICIO</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WORKTRIC | ELECTRICIDAD EN SERVICIO</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-</head>
+  <body>
+    <!--NAVBAR-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-worktric py-0 h-nav fixed-top"
+    >
+      <div class="container container-fluid">
+        <a class="navbar-brand py-0" href="index.html">
+          <img
+            id="headLogo"
+            src="img/logo_head.png"
+            class="logo-brand animate__animated"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-
-  <!--NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-worktric py-0 h-nav fixed-top">
-    <div class="container container-fluid">
-      <a class="navbar-brand py-0" href="index.html">
-        <img id="headLogo" src="img/logo_head.png" class="logo-brand animate__animated" alt="" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse bg-worktric" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto font-weight-bold resp-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#top">Home </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#nosotros">Nosotros</a>
-          </li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Marcas
-            </a>
-            <div class="dropdown-menu dark-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="worktric.html">Worktric</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="chint.html">Chint Electric</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="starco.html">Staco Energy</a>
-              <!-- <div class="dropdown-divider"></div>
+        <div
+          class="collapse navbar-collapse bg-worktric"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto font-weight-bold resp-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#top">Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Marcas
+              </a>
+              <div
+                class="dropdown-menu dark-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="worktric.html">Worktric</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="chint.html">Chint Electric</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="starco.html">Staco Energy</a>
+                <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="exl.html">EXL</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="bit.html">Bit</a> -->
-            </div>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#galeria">Galería</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!--BANNER-->
-  <section class="banner-wrapper">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center banner-content justify-content-center">
-
-        <div class="col-lg-5 text-center">
-          <div class="d-flex align-items-center justify-content-center h-100 ">
-            <img id="mainLogo" src="img/logo-banner.png" class="logo-banner w-100 animate__animated" alt="" />
+    <!--BANNER-->
+    <section class="banner-wrapper">
+      <div class="container h-100">
+        <div
+          class="row h-100 align-items-center banner-content justify-content-center"
+        >
+          <div class="col-lg-5 text-center">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <img
+                id="mainLogo"
+                src="img/logo-banner.png"
+                class="logo-banner w-100 animate__animated"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-
+        <div class="video-wrapper">
+          <video
+            class="banner-video"
+            poster=""
+            playsinline=""
+            autoplay=""
+            muted=""
+            loop=""
+          >
+            <source
+              src="video/worktric-video-background.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
       </div>
-      <div class="video-wrapper">
-        <video class="banner-video" poster="" playsinline="" autoplay="" muted="" loop="">
-          <source src="video/worktric-video-background.mp4" type="video/mp4" />
-        </video>
+    </section>
+
+    <section id="energy" class="container">
+      <div
+        class="d-flex align-items-center justify-content-center energy-dont-lie"
+      >
+        <img src="img/la-energia-no-miente.png" alt="" />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="energy" class="container">
-    <div class="d-flex align-items-center justify-content-center energy-dont-lie">
-      <img src="img/la-energia-no-miente.png" alt="" />
-    </div>
-  </section>
+    <!--NOSOTROS-->
+    <section class="container" id="nosotros">
+      <div class="row h-nosotros align-items-center justify-content-center">
+        <div
+          class="col-lg-5 col-md-12 col-12 text-lg-left text-md-center text-center"
+        >
+          <h1 class="ff-neoteric-bold text-worktric us-main-title">
+            <span class="us-title"> NOSOTROS </span>
 
-  <!--NOSOTROS-->
-  <section class="container" id="nosotros">
-    <div class="row h-nosotros align-items-center justify-content-center">
-      <div class="
-            col-lg-5 col-md-12 col-12
-            text-lg-left text-md-center text-center
-          ">
-        <h1 class="ff-neoteric-bold text-worktric us-main-title">
-          <span class="us-title"> NOSOTROS </span>
+            <br />
 
-          <br />
+            <span class="us-subtitle"> ELECTRICIDAD EN SERVICIO </span>
+          </h1>
+        </div>
+        <div class="col-lg-7 col-md-12 col-12 text-worktric-grey us-paragraph">
+          <p>
+            Worktric es una empresa que nace en 2019, la cual otorga servicios
+            de media y baja tensión en el sector eléctrico a nivel nacional. Con
+            el fin de ayudar a las empresas, para que puedan tener acceso a un
+            portafolio diverso de estos servicios, a un precio razonable y
+            competitivo sin sacrificar la calidad.
+          </p>
+          <p>
+            Se cuenta con personal con más de 24 años de experiencia en la
+            industria, manteniendo siempre el enfoque hacia el cliente. Nosotros
+            estamos conscientes, que sus equipos eléctricos son activos de alto
+            valor y que por lo tanto, la operación, manejo y mantenimiento deben
+            ser gestionados con prioridad y responsabilidad.
+          </p>
+          <p>
+            Tenemos la firme creencia, que un buen servicio con lleva a
+            relaciones duraderas entre cliente y proveedor.
+          </p>
 
-          <span class="us-subtitle">
-            ELECTRICIDAD EN SERVICIO
-          </span>
+          <button
+            type="button"
+            class="btn btn-lg btn-warning mt-5 rounded-pill"
+            onclick="alert('Aquí va el video ')"
+            style="min-width: 250px"
+          >
+            Ver video
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="paralax" class="bg-paralax"></section>
+
+    <!--NUESTRAS MARCAS-->
+    <section class="container-fluid px-0">
+      <div
+        id="brands"
+        class="d-flex align-items-center justify-content-center h-title"
+      >
+        <h1
+          class="ff-neoteric-bold text-worktric us-main-title text-center py-3"
+          style="line-height: 1"
+        >
+          <span class="us-title">NUESTRAS MARCAS</span>
         </h1>
       </div>
-      <div class="col-lg-7 col-md-12 col-12 text-worktric-grey us-paragraph">
-        <p>
-          Worktric es una empresa que nace en 2019, la cual otorga servicios
-          de media y baja tensión en el sector eléctrico a nivel nacional. Con
-          el fin de ayudar a las empresas, para que puedan tener acceso a un
-          portafolio diverso de estos servicios, a un precio razonable y
-          competitivo sin sacrificar la calidad.
-        </p>
-        <p>
-          Se cuenta con personal con más de 24 años de experiencia en la
-          industria, manteniendo siempre el enfoque hacia el cliente. Nosotros
-          estamos conscientes, que sus equipos eléctricos son activos de alto
-          valor y que por lo tanto, la operación, manejo y mantenimiento deben
-          ser gestionados con prioridad y responsabilidad.
-        </p>
-        <p>
-          Tenemos la firme creencia, que un buen servicio con lleva a
-          relaciones duraderas entre cliente y proveedor.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <section id="paralax" class="bg-paralax"></section>
-
-  <!--NUESTRAS MARCAS-->
-  <section class="container-fluid px-0">
-    <div id="brands" class="d-flex align-items-center justify-content-center h-title">
-      <h1 class="ff-neoteric-bold text-worktric us-main-title text-center py-3" style="line-height: 1;">
-        <span class="us-title">NUESTRAS MARCAS</span>
-      </h1>
-    </div>
-    </div>
-
-    <a href="worktric.html">
-      <div id="brandWorktric" class="brands-animate img-worktic"></div>
-    </a>
-    <a href="chint.html">
-      <div id="brandChnt" class="brands-animate img-chnt"></div>
-    </a>
-    <a href="starco.html">
-      <div id="brandStarco" class="brands-animate img-starco"></div>
-    </a>
-    <!-- <a  href="exl.html"><div id="brandExl" class="brands-animate img-exl"></div></a>
+      <a href="worktric.html">
+        <div id="brandWorktric" class="brands-animate img-worktic"></div>
+      </a>
+      <a href="chint.html">
+        <div id="brandChnt" class="brands-animate img-chnt"></div>
+      </a>
+      <a href="starco.html">
+        <div id="brandStarco" class="brands-animate img-starco"></div>
+      </a>
+      <!-- <a  href="exl.html"><div id="brandExl" class="brands-animate img-exl"></div></a>
       <a href="bit.html"> <div id="brandBit"  class="brands-animate img-bit"></div></a> -->
-  </section>
+    </section>
 
-  <section class="container" id="galeria">
-    <div id="brands" class="d-flex align-items-center justify-content-center h-title">
-      <h1 class="ff-neoteric-bold text-worktric us-main-title text-center py-3" style="line-height: 1">
-        <span class="us-title">GALERÍA</span>
-      </h1>
-    </div>
-
-    <div class="gallery">
-      <!--COLUMN 1-->
-      <div class="gallery__column">
-        <a target="_blank" class="gallery__link" onclick="galleryBlackBox('img/gallery/galeria-1.jpg','Worktric')">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-1.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-5-long.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-5-long.jpg" alt="" class="gallery__image" />
-
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-9.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-9.jpg" alt="" class="gallery__image" />
-
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-13-long.jpg','Worktric')" target="_blank"
-          class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-13-long.jpg" alt="" class="gallery__image" />
-
-          </figure>
-        </a>
-
+    <section class="container" id="galeria">
+      <div
+        id="brands"
+        class="d-flex align-items-center justify-content-center h-title"
+      >
+        <h1
+          class="ff-neoteric-bold text-worktric us-main-title text-center py-3"
+          style="line-height: 1"
+        >
+          <span class="us-title">GALERÍA</span>
+        </h1>
       </div>
 
-      <!--COLUMN 2-->
-      <div class="gallery__column">
-        <a onclick="galleryBlackBox('img/gallery/galeria-2.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-2.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
+      <div class="gallery">
+        <!--COLUMN 1-->
+        <div class="gallery__column">
+          <a
+            target="_blank"
+            class="gallery__link"
+            onclick="galleryBlackBox('img/gallery/galeria-1.jpg','Worktric')"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-1.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
 
-        <a onclick="galleryBlackBox('img/gallery/galeria-6.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-6.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-5-long.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-5-long.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
 
-        <a onclick="galleryBlackBox('img/gallery/galeria-10-long.jpg','Worktric')" target="_blank"
-          class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-10-long.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-9.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-9.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
 
-        <a onclick="galleryBlackBox('img/gallery/galeria-14.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-14.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-13-long.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-13-long.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+        </div>
 
-        <a onclick="galleryBlackBox('img/gallery/galeria-15.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-15.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
+        <!--COLUMN 2-->
+        <div class="gallery__column">
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-2.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-2.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-6.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-6.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-10-long.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-10-long.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-14.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-14.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-15.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-15.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+        </div>
+
+        <!--COLUMN 3-->
+        <div class="gallery__column">
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-3.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-3-long.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-7.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-7.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-11.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-11.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-16-long.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-16-long.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+        </div>
+
+        <!--COLUMN 4-->
+        <div class="gallery__column">
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-4.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-4.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-8.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-8.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-12-long.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-12-long.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-17.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-17.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+
+          <a
+            onclick="galleryBlackBox('img/gallery/galeria-18.jpg','Worktric')"
+            target="_blank"
+            class="gallery__link"
+          >
+            <figure class="gallery__thumb">
+              <img
+                src="img/gallery/galeria-18.jpg"
+                alt=""
+                class="gallery__image"
+              />
+            </figure>
+          </a>
+        </div>
       </div>
 
-      <!--COLUMN 3-->
-      <div class="gallery__column">
-        <a onclick="galleryBlackBox('img/gallery/galeria-3.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-3-long.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-7.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-7.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-11.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-11.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-16-long.jpg','Worktric')" target="_blank"
-          class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-16-long.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
+      <div class="d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-lg btn-warning mt-5 rounded-pill"
+          onclick="window.location.href = 'gallery.html';"
+          style="min-width: 250px"
+        >
+          Ver más
+        </button>
       </div>
+    </section>
 
-      <!--COLUMN 4-->
-      <div class="gallery__column">
-        <a onclick="galleryBlackBox('img/gallery/galeria-4.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-4.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-8.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-8.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-12-long.jpg','Worktric')" target="_blank"
-          class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-12-long.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-17.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-17.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
-
-        <a onclick="galleryBlackBox('img/gallery/galeria-18.jpg','Worktric')" target="_blank" class="gallery__link">
-          <figure class="gallery__thumb">
-            <img src="img/gallery/galeria-18.jpg" alt="" class="gallery__image" />
-          </figure>
-        </a>
+    <!--CONTACTO-->
+    <section id="contactus" class="container">
+      <div class="d-flex align-items-center justify-content-center h-title">
+        <h1 class="ff-neoteric-bold text-worktric us-main-title py-3">
+          <span class="us-title">CONTACTO</span>
+        </h1>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--CONTACTO-->
-  <section id="contactus" class="container">
-    <div class="d-flex align-items-center justify-content-center h-title">
-      <h1 class="ff-neoteric-bold text-worktric us-main-title py-3">
-        <span class="us-title">CONTACTO</span>
-      </h1>
-    </div>
-  </section>
+    <section class="bg-contactus" id="contacto">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card border-0 bg-transparent">
+              <div class="card-body">
+                <div class="row">
+                  <div
+                    class="col-lg-6 col-md-12 col-12 bg-worktric p-lg-5 p-md-5 p-4 radius-left"
+                  >
+                    <form
+                      id="contactForm"
+                      name="sentMessage"
+                      novalidate="novalidate"
+                      class="custom-form w-100"
+                    >
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <label
+                              for="name"
+                              class="font-weight-bold text-bocare"
+                              >Nombre:</label
+                            >
+                            <input
+                              class="form-control"
+                              id="name"
+                              type="text"
+                              placeholder="Tu nombre *"
+                              required="required"
+                              data-validation-required-message="Por favor agrega tu nombre."
+                            />
+                            <p class="help-block text-danger"></p>
+                          </div>
+                          <div class="form-group">
+                            <label
+                              for="email"
+                              class="font-weight-bold text-bocare"
+                              >Correo:</label
+                            >
+                            <input
+                              class="form-control"
+                              id="email"
+                              type="email"
+                              placeholder="Tu email *"
+                              required="required"
+                              data-validation-required-message="Por favor ingresa tu dirección de correo."
+                            />
+                            <p class="help-block text-danger"></p>
+                          </div>
 
-  <section class="bg-contactus" id="contacto">
-    <div class="container pb-5">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="card border-0 bg-transparent">
-            <div class="card-body">
-              <div class="row">
-                <div class="
-                      col-lg-6 col-md-12 col-12
-                      bg-worktric
-                      p-lg-5 p-md-5 p-4
-                      radius-left
-                    ">
-                  <form id="contactForm" name="sentMessage" novalidate="novalidate" class="custom-form w-100">
+                          <div class="form-group">
+                            <label
+                              for="phone"
+                              class="font-weight-bold text-bocare"
+                              >Teléfono:</label
+                            >
+                            <input
+                              class="form-control"
+                              id="phone"
+                              type="tel"
+                              placeholder="Tu teléfono *"
+                              required="required"
+                              data-validation-required-message="Por favor ingresa tu teléfono."
+                            />
+                            <p class="help-block text-danger"></p>
+                          </div>
+                          <div class="form-group">
+                            <label
+                              for="profile"
+                              class="font-weight-bold text-bocare"
+                              >Servicio:</label
+                            >
+                            <input
+                              class="form-control"
+                              id="profile"
+                              type="text"
+                              placeholder="Escribe que servicio deseas*"
+                              required="required"
+                              data-validation-required-message="Por favor ingresa a que servicio requieres"
+                            />
+                            <p class="help-block text-danger"></p>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <label class="font-weight-bold text-bocare"
+                              >Mensaje:</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="message"
+                              placeholder="Mensaje *"
+                              required="required"
+                              data-validation-required-message="Por favor ingresa un mensaje."
+                            ></textarea>
+                            <p class="help-block text-danger"></p>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center mb-3">
+                          <div id="success"></div>
+                          <button
+                            id="sendMessageButton"
+                            class="btn btn-worktric-dark btn-block text-uppercase"
+                            type="submit"
+                          >
+                            Enviar correo
+                          </button>
+                        </div>
+                      </div>
+                    </form>
                     <div class="row">
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <label for="name" class="font-weight-bold text-bocare">Nombre:</label>
-                          <input class="form-control" id="name" type="text" placeholder="Tu nombre *"
-                            required="required" data-validation-required-message="Por favor agrega tu nombre." />
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <label for="email" class="font-weight-bold text-bocare">Correo:</label>
-                          <input class="form-control" id="email" type="email" placeholder="Tu email *"
-                            required="required"
-                            data-validation-required-message="Por favor ingresa tu dirección de correo." />
-                          <p class="help-block text-danger"></p>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="phone" class="font-weight-bold text-bocare">Teléfono:</label>
-                          <input class="form-control" id="phone" type="tel" placeholder="Tu teléfono *"
-                            required="required" data-validation-required-message="Por favor ingresa tu teléfono." />
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <label for="profile" class="font-weight-bold text-bocare">Servicio:</label>
-                          <input class="form-control" id="profile" type="text"
-                            placeholder="Escribe que servicio deseas*" required="required"
-                            data-validation-required-message="Por favor ingresa a que servicio requieres" />
-                          <p class="help-block text-danger"></p>
-                        </div>
+                      <div class="col-lg-12 text-center">
+                        <span
+                          class="d-flex align-items-center justify-content-center mb-2 font-weight-bold text-worktric-dark"
+                          ><span class="material-icons text-white mr-2">
+                            room
+                          </span>
+                          Monterrey, Nuevo Leon</span
+                        >
+                        <a
+                          href="mailto:info@worktric.com.mx"
+                          class="d-flex align-items-center justify-content-center mb-2 font-weight-bold text-worktric-dark"
+                          ><span class="material-icons text-white mr-2">
+                            mail_outline
+                          </span>
+                          info@worktric.com.mx</a
+                        >
+                        <a
+                          href="https://wa.me/8182537357"
+                          target="_blank"
+                          class="d-flex align-items-center justify-content-center font-weight-bold text-worktric-dark"
+                          ><img src="img/whatsapp.svg" class="wpp" alt="" />
+                          Whatsapp click aquí: 8182537357</a
+                        >
                       </div>
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <label class="font-weight-bold text-bocare">Mensaje:</label>
-                          <textarea class="form-control" id="message" placeholder="Mensaje *" required="required"
-                            data-validation-required-message="Por favor ingresa un mensaje."></textarea>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                      <div class="col-lg-12 text-center mb-3">
-                        <div id="success"></div>
-                        <button id="sendMessageButton" class="
-                              btn btn-worktric-dark btn-block
-                              text-uppercase
-                            " type="submit">
-                          Enviar correo
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="row">
-                    <div class="col-lg-12 text-center">
-                      <span class="
-                            d-flex
-                            align-items-center
-                            justify-content-center
-                            mb-2
-                            font-weight-bold
-                            text-worktric-dark
-                          "><span class="material-icons text-white mr-2">
-                          room
-                        </span>
-                        Monterrey, Nuevo Leon</span>
-                      <a href="mailto:info@worktric.com.mx" class="
-                            d-flex
-                            align-items-center
-                            justify-content-center
-                            mb-2
-                            font-weight-bold
-                            text-worktric-dark
-                          "><span class="material-icons text-white mr-2">
-                          mail_outline
-                        </span>
-                        info@worktric.com.mx</a>
-                      <a href="https://wa.me/8182537357" target="_blank" class="
-                            d-flex
-                            align-items-center
-                            justify-content-center
-                            font-weight-bold
-                            text-worktric-dark
-                          "><img src="img/whatsapp.svg" class="wpp" alt="" />
-                        Whatsapp click aquí: 8182537357</a>
                     </div>
                   </div>
+                  <div
+                    class="col-lg-6 col-md-12 col-12 bg-contact-right radius-right"
+                  ></div>
                 </div>
-                <div class="
-                      col-lg-6 col-md-12 col-12
-                      bg-contact-right
-                      radius-right
-                    "></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer-worktric py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 text-center">
+    <footer class="footer-worktric py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <img src="img/logo-footer.png" class="footer-logo" alt="" />
 
-          <img src="img/logo-footer.png" class="footer-logo" alt="">
+            <div class="social-media-logos">
+              <img src="img/linkedin.svg" alt="" />
+              <img src="img/Instagram.svg" alt="" />
+              <img src="img/mail.svg" alt="" />
+            </div>
 
-          <div class="social-media-logos">
-            <img src="img/linkedin.svg" alt="">
-            <img src="img/Instagram.svg" alt="">
-            <img src="img/mail.svg" alt="">
+            <p>
+              Copyright 2020 All rights reserved Powered by
+              <a href="https://www.maketastudio.com.mx" class="font-weight-bold"
+                >Maketa Studio</a
+              >
+            </p>
           </div>
-
-          <p>Copyright 2020 All rights reserved Powered by <a href="https://www.maketastudio.com.mx"
-              class="font-weight-bold">Maketa Studio</a></p>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- SOCKET -->
-  <!-- <div class="container-fluid">
+    <!-- SOCKET -->
+    <!-- <div class="container-fluid">
       <div class="row">
         <div
           class="
@@ -454,35 +706,43 @@
       </div>
     </div> -->
 
+    <!-- FLOATING ELEMENTS -->
+    <a id="goupbtn" class="goupbtn animate__animated" href="#top">
+      <i class="material-icons">keyboard_arrow_up</i>
+    </a>
 
-  <!-- FLOATING ELEMENTS -->
-  <a id="goupbtn" class="goupbtn animate__animated" href="#top">
-    <i class="material-icons">keyboard_arrow_up</i>
-  </a>
+    <a
+      href="https://api.whatsapp.com/send?phone=8182537357&text=Hola,%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20Bocare%20"
+      target="_blank"
+    >
+      <img
+        id="waBtn"
+        class="whatsapp-float animate__animated"
+        src="img/whatsapp-buton.svg"
+        alt="Envíanos un whats"
+      />
+    </a>
 
+    <!--SCRIPTS-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
 
-  <a href="https://api.whatsapp.com/send?phone=8182537357&text=Hola,%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20Bocare%20"
-    target="_blank">
-    <img id="waBtn" class="whatsapp-float animate__animated" src="img/whatsapp-buton.svg" alt="Envíanos un whats" />
-  </a>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
 
-  <!--SCRIPTS-->
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-
-  <script src="js/bootstrap/bootstrap.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/events_home.js"></script>
-</body>
-
+    <!-- Custom scripts for this template -->
+    <script src="js/events_home.js"></script>
+  </body>
 </html>
