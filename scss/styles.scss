@@ -1,29 +1,29 @@
 /*==============SETTINGS==================*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'), local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: 'Neoteric Bold';
-  src: url('../fonts/NEOTERIC_BOLD.ttf');
+  font-family: "Neoteric Bold";
+  src: url("../fonts/NEOTERIC_BOLD.ttf");
   font-weight: bolder;
   font-style: normal;
 }
 /*FONTS*/
 
 .ff-neoteric-bold {
-  font-family: 'Neoteric Bold' !important;
+  font-family: "Neoteric Bold" !important;
   font-weight: bolder;
 }
 .ff-roboto {
-  font-family: 'Roboto' !important;
+  font-family: "Roboto" !important;
 }
 /*COLOR VARIABLES*/
 
@@ -158,7 +158,7 @@
 body {
   position: relative;
   margin: 0;
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
   background-color: var(--brand-worktric-dark);
 }
 html {
@@ -357,7 +357,7 @@ html {
   margin-bottom: 1rem;
 }
 .ray-bullet li:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 38px;
   width: 12px;
@@ -372,7 +372,7 @@ html {
   margin-bottom: 1rem;
 }
 .ray-mini-bullet li:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 18px;
   width: 8px;
@@ -448,62 +448,6 @@ html {
   }
 }
 
-.img-velher {
-  transition: all ease 0.3s;
-  width: 100%;
-  min-height: 151px;
-  background: transparent url(../img/VELHER.jpg) scroll no-repeat center center /
-    cover;
-
-  &:hover {
-    background: transparent url(../img/velher-hover.jpg) scroll no-repeat center
-      center / cover;
-    cursor: pointer;
-  }
-}
-
-.img-bit {
-  transition: all ease 0.3s;
-  width: 100%;
-  min-height: 151px;
-  background: transparent url(../img/BIT.jpg) scroll no-repeat center center /
-    cover;
-
-  &:hover {
-    background: transparent url(../img/bit-hover.jpg) scroll no-repeat center
-      center / cover;
-    cursor: pointer;
-  }
-}
-
-.img-exl {
-  transition: all ease 0.3s;
-  width: 100%;
-  min-height: 151px;
-  background: transparent url(../img/EXL.jpg) scroll no-repeat center center /
-    cover;
-
-  &:hover {
-    background: transparent url(../img/exl-hover.jpg) scroll no-repeat center
-      center / cover;
-    cursor: pointer;
-  }
-}
-
-.img-starco {
-  transition: all ease 0.3s;
-  width: 100%;
-  min-height: 151px;
-  background: transparent url(../img/STARCO.jpg) scroll no-repeat center center /
-    cover;
-
-  &:hover {
-    background: transparent url(../img/starco-hover.jpg) scroll no-repeat center
-      center / cover;
-    cursor: pointer;
-  }
-}
-
 .img-chnt {
   transition: all ease 0.3s;
   width: 100%;
@@ -514,6 +458,34 @@ html {
   &:hover {
     background: transparent url(../img/chnt-hover.jpg) scroll no-repeat center
       center / cover;
+    cursor: pointer;
+  }
+}
+
+.img-wolong {
+  transition: all ease 0.3s;
+  width: 100%;
+  min-height: 151px;
+  background: transparent url(../img/wolong.jpg) scroll no-repeat center center /
+    cover;
+
+  &:hover {
+    background: transparent url(../img/wolong-hover.jpg) scroll no-repeat center
+      center / cover;
+    cursor: pointer;
+  }
+}
+
+.img-mitsubishi {
+  transition: all ease 0.3s;
+  width: 100%;
+  min-height: 151px;
+  background: transparent url(../img/mitsubishi.jpg) scroll no-repeat center
+    center / cover;
+
+  &:hover {
+    background: transparent url(../img/mitsubishi-hover.jpg) scroll no-repeat
+      center center / cover;
     cursor: pointer;
   }
 }
@@ -881,10 +853,9 @@ html {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1299.98px) {
   .img-worktic,
-  .img-velher,
-  .img-exl,
-  .img-starco,
-  .img-chnt {
+  .img-chnt,
+  .img-wolong,
+  .img-mitsubishi {
     min-height: 423px;
   }
 }
@@ -895,11 +866,9 @@ html {
     min-height: 639px;
   }
   .img-worktic,
-  .img-velher,
-  .img-exl,
-  .img-starco,
   .img-chnt,
-  .img-bit {
+  .img-wolong,
+  .img-mitsubishi {
     min-height: 423px;
   }
 
@@ -908,11 +877,9 @@ html {
   }
 }
 
-@import 'worktric';
-@import 'velher';
-@import 'exl';
-@import 'chint';
-@import 'staco';
-@import 'bit';
-@import 'animations';
-@import 'galeria';
+@import "worktric";
+@import "chint";
+@import "wolong";
+@import "mitsubishi";
+@import "animations";
+@import "galeria";

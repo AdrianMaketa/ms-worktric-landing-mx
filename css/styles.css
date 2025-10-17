@@ -452,50 +452,6 @@ html {
   cursor: pointer;
 }
 
-.img-velher {
-  transition: all ease 0.3s;
-  width: 100%;
-  min-height: 151px;
-  background: transparent url(../img/VELHER.jpg) scroll no-repeat center center/cover;
-}
-.img-velher:hover {
-  background: transparent url(../img/velher-hover.jpg) scroll no-repeat center center/cover;
-  cursor: pointer;
-}
-
-.img-bit {
-  transition: all ease 0.3s;
-  width: 100%;
-  min-height: 151px;
-  background: transparent url(../img/BIT.jpg) scroll no-repeat center center/cover;
-}
-.img-bit:hover {
-  background: transparent url(../img/bit-hover.jpg) scroll no-repeat center center/cover;
-  cursor: pointer;
-}
-
-.img-exl {
-  transition: all ease 0.3s;
-  width: 100%;
-  min-height: 151px;
-  background: transparent url(../img/EXL.jpg) scroll no-repeat center center/cover;
-}
-.img-exl:hover {
-  background: transparent url(../img/exl-hover.jpg) scroll no-repeat center center/cover;
-  cursor: pointer;
-}
-
-.img-starco {
-  transition: all ease 0.3s;
-  width: 100%;
-  min-height: 151px;
-  background: transparent url(../img/STARCO.jpg) scroll no-repeat center center/cover;
-}
-.img-starco:hover {
-  background: transparent url(../img/starco-hover.jpg) scroll no-repeat center center/cover;
-  cursor: pointer;
-}
-
 .img-chnt {
   transition: all ease 0.3s;
   width: 100%;
@@ -504,6 +460,28 @@ html {
 }
 .img-chnt:hover {
   background: transparent url(../img/chnt-hover.jpg) scroll no-repeat center center/cover;
+  cursor: pointer;
+}
+
+.img-wolong {
+  transition: all ease 0.3s;
+  width: 100%;
+  min-height: 151px;
+  background: transparent url(../img/wolong.jpg) scroll no-repeat center center/cover;
+}
+.img-wolong:hover {
+  background: transparent url(../img/wolong-hover.jpg) scroll no-repeat center center/cover;
+  cursor: pointer;
+}
+
+.img-mitsubishi {
+  transition: all ease 0.3s;
+  width: 100%;
+  min-height: 151px;
+  background: transparent url(../img/mitsubishi.jpg) scroll no-repeat center center/cover;
+}
+.img-mitsubishi:hover {
+  background: transparent url(../img/mitsubishi-hover.jpg) scroll no-repeat center center/cover;
   cursor: pointer;
 }
 
@@ -835,10 +813,9 @@ html {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1299.98px) {
   .img-worktic,
-  .img-velher,
-  .img-exl,
-  .img-starco,
-  .img-chnt {
+  .img-chnt,
+  .img-wolong,
+  .img-mitsubishi {
     min-height: 423px;
   }
 }
@@ -848,11 +825,9 @@ html {
     min-height: 639px;
   }
   .img-worktic,
-  .img-velher,
-  .img-exl,
-  .img-starco,
   .img-chnt,
-  .img-bit {
+  .img-wolong,
+  .img-mitsubishi {
     min-height: 423px;
   }
   .h-title {
@@ -947,56 +922,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
-.content {
-  padding: 5rem 1rem;
-  background: white;
-  text-align: center;
-  font-size: 1rem;
-}
-.content .pdf-link {
-  text-decoration: none;
-  transition: all ease 0.3s;
-}
-.content .pdf-link:hover {
-  transform: scale(1.1);
-}
-.content .pdf-link .img-brand {
-  margin-top: 10rem;
-}
-.content .pdf-link .download-text {
-  font-weight: bold;
-  font-size: 37px;
-  line-height: 1.5;
-  color: #e4b533;
-  margin-bottom: 3rem;
-}
-.content .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-weight: bold;
-}
-.content .navigation .back-link {
-  text-decoration: none;
-  color: black;
-  transition: all ease 0.3s;
-}
-.content .navigation .back-link:hover {
-  transform: scale(1.1);
-}
-.content .navigation .back-link img {
-  margin-right: 1rem;
-}
-
-.banner-secondary {
-  margin-top: 50px;
-  padding: 3rem 1rem;
-  background: transparent url(../img/background-slide.jpg) scroll no-repeat center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .banner-secondary .logo {
   width: 200px;
 }
@@ -1057,6 +982,25 @@ html {
     width: 50%;
   }
 }
+.logo-bit {
+  width: 200px;
+}
+
+@media (max-width: 575.98px) {
+  .logo-bit {
+    width: 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  .logo-bit {
+    width: 50%;
+  }
+}
+@media (max-width: 991.98px) {
+  .logo-bit {
+    width: 50%;
+  }
+}
 .banner-secondary {
   margin-top: 50px;
   padding: 3rem 1rem;
@@ -1107,25 +1051,6 @@ html {
   margin-right: 1rem;
 }
 
-.logo-bit {
-  width: 200px;
-}
-
-@media (max-width: 575.98px) {
-  .logo-bit {
-    width: 50%;
-  }
-}
-@media (max-width: 767.98px) {
-  .logo-bit {
-    width: 50%;
-  }
-}
-@media (max-width: 991.98px) {
-  .logo-bit {
-    width: 50%;
-  }
-}
 .floating-image {
   position: relative;
   -webkit-animation-name: floatingimg; /* Safari 4.0 - 8.0 */

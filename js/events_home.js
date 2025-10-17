@@ -110,14 +110,25 @@ function brandsSlideAnimation() {
       $("#brandStarco").addClass("animate__animated animate__slideInLeft");
     }
 
-    if ($("#brandExl").length && st > $("#brandExl").offset().top - 300) {
-      $("#brandExl").css("visibility", "visible");
-      $("#brandExl").addClass("animate__animated animate__slideInRight");
+    if ($("#brandWolong").length && st > $("#brandWolong").offset().top - 300) {
+      $("#brandWolong").css("visibility", "visible");
+      $("#brandWolong").addClass("animate__animated animate__slideInLeft");
     }
 
-    if ($("#brandBit").length && st > $("#brandBit").offset().top - 300) {
-      $("#brandBit").css("visibility", "visible");
-      $("#brandBit").addClass("animate__animated animate__slideInLeft");
+    if (
+      $("#brandMitsubishi").length &&
+      st > $("#brandMitsubishi").offset().top - 300
+    ) {
+      $("#brandMitsubishi").css("visibility", "visible");
+      $("#brandMitsubishi").addClass("animate__animated animate__slideInRight");
+    }
+
+    if (
+      $("#brandMitsubishi").length &&
+      st > $("#brandMitsubishi").offset().top - 300
+    ) {
+      $("#brandMitsubishi").css("visibility", "visible");
+      $("#brandMitsubishi").addClass("animate__animated animate__slideInRight");
     }
   });
 }
