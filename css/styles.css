@@ -842,20 +842,14 @@ html {
   align-items: center;
   justify-content: center;
 }
-.banner-secondary.velher {
-  background: transparent url(../img/brands/bg-velher.jpg) scroll no-repeat center/cover !important;
-}
-.banner-secondary.exl {
-  background: transparent url(../img/brands/bg-exl.jpg) scroll no-repeat center/cover !important;
-}
-.banner-secondary.starco {
-  background: transparent url(../img/brands/bg-starco.jpg) scroll no-repeat bottom center/cover !important;
-}
 .banner-secondary.chint {
   background: transparent url(../img/brands/bg-chint.jpg) scroll no-repeat bottom center/cover !important;
 }
-.banner-secondary.bit {
-  background: transparent url(../img/brands/bg-bit.jpg) scroll no-repeat bottom center/cover !important;
+.banner-secondary.wolong {
+  background: transparent url(../img/brands/bg-wolong.jpg) scroll no-repeat bottom center/cover !important;
+}
+.banner-secondary.mitsubishi {
+  background: transparent url(../img/brands/bg-mitsubishi.jpg) scroll no-repeat bottom center/cover !important;
 }
 
 .content {
@@ -982,22 +976,22 @@ html {
     width: 50%;
   }
 }
-.logo-bit {
+.logo-wolong {
   width: 200px;
 }
 
 @media (max-width: 575.98px) {
-  .logo-bit {
+  .logo-wolong {
     width: 50%;
   }
 }
 @media (max-width: 767.98px) {
-  .logo-bit {
+  .logo-wolong {
     width: 50%;
   }
 }
 @media (max-width: 991.98px) {
-  .logo-bit {
+  .logo-wolong {
     width: 50%;
   }
 }

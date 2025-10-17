@@ -7,29 +7,19 @@
   align-items: center;
   justify-content: center;
 
-  &.velher {
-    background: transparent url(../img/brands/bg-velher.jpg) scroll no-repeat
-      center/ cover !important;
-  }
-
-  &.exl {
-    background: transparent url(../img/brands/bg-exl.jpg) scroll no-repeat
-      center/ cover !important;
-  }
-
-  &.starco {
-    background: transparent url(../img/brands/bg-starco.jpg) scroll no-repeat
-      bottom center/ cover !important;
-  }
-
   &.chint {
     background: transparent url(../img/brands/bg-chint.jpg) scroll no-repeat
       bottom center/ cover !important;
   }
 
-  &.bit {
-    background: transparent url(../img/brands/bg-bit.jpg) scroll no-repeat
+  &.wolong {
+    background: transparent url(../img/brands/bg-wolong.jpg) scroll no-repeat
       bottom center/ cover !important;
+  }
+
+  &.mitsubishi {
+    background: transparent url(../img/brands/bg-mitsubishi.jpg) scroll
+      no-repeat bottom center/ cover !important;
   }
 }
 
